@@ -1,52 +1,73 @@
+
+html,body{
+
+  height:100%;
+}
 body{
 
-	background-image: url(../img/diagPattern.jpg);
+  background-color: #fdf9f3;
+}
+header{
+  height:100%;
+  width: 100%;
+  background-color: #fdf9f3;
+  background-size: cover;
+  margin:0;
 }
 .center {
+
     margin-left: auto;
     margin-right: auto;
     width: 70%;
 }
-
-h1 {
-  color:white;
+h1 { 
+  color:black;
   font-size: 5vw;
-  border: solid 5px white;
-  border-radius: 10px;
-  background-color: black;
+  font-family: Bree Serif;
+  border: solid 10px black;
 	text-align: center;
   margin-left: 25%;
   margin-right: 25%;
 }
-.sentenceGenerator {
+#generatedSentence {
 
-
+  text-align: center;
+  font-family: Bree Serif;
+  color:black;
 }
-
+.countWrapper{
+  float:right;
+  margin-right: 10%;
+  width: auto;
+}
 #clickCounter{
 	text-align: center;
 	font-size: 3vw;
-	color: white; 
-  border: solid 5px white;
-  border-radius: 10px;
-  background-color: black;
-  margin-left: 35%;
-  margin-right: 35%;
+  font-family: Bree Serif;
+	color: black; 
+  border: solid 5px black;
+  border-radius: 15px;
+  height: 225px;  
+  width: auto;
+  margin-top: 0;
 }
 
-button{
+.sentenceGenerator{
 	display: block;
   width: 25vw; 
   height: auto;
   margin: 0 auto; 
   font-size: 4vh;
-  color: white;
-  background: rgba(5, 5, 5, 0.75);
+  font-family: Bree Serif;
+  color: black;
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 10px;
- 	border: solid 5px white;
+ 	border: solid 5px black;
 
  }
  button:hover{
  	cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  color:white;
  }
 

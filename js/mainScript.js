@@ -10,8 +10,8 @@ function update(clickAmount){
 }
 
 function showSentence(){
-
-	document.getElementById("generatedSentence").innerHTML = sentence;
+	
+	document.getElementById("generatedSentence").innerHTML = sentence.join(" ");
 
 }
 

@@ -4,25 +4,29 @@
 	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 	<link type="text/css" rel="stylesheet" href="css/mainStyle.css" />
 	<script src="js/firebase.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 </head>
 
 
+
+<header>
+	<h1>Monkey Keyboard</h1>
+</header>
+
 <body>
+	<div class = "countWrapper">
+		<p id = "clickCounter"></p>
+	</div>
 
-<h1>Monkey Keyboard</h1>
-
-<div>
-	<p id = "clickCounter"></p>
-</div>
-
-<div>
-	<p id = "generatedSentence"></p>
-</div>
+	<div class = "center">
+		<button class = "sentenceGenerator" type="button" onClick = "generate();">Generate Sentence!</button>
+	</div>
 
 
-<div class = "center">
-	<button class = "sentenceGenerator" type="button" onClick = "generate();">Generate Sentence!</button>
-</div>
+
+	<div>
+		<p id = "generatedSentence"></p>
+	</div>
 
 </body>
 
