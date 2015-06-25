@@ -1,5 +1,6 @@
-html{
-	background-color: gray;
+body{
+
+	background-image: url(../img/diagPattern.jpg);
 }
 .center {
     margin-left: auto;
@@ -8,8 +9,14 @@ html{
 }
 
 h1 {
-
+  color:white;
+  font-size: 5vw;
+  border: solid 5px white;
+  border-radius: 10px;
+  background-color: black;
 	text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 .sentenceGenerator {
 
@@ -18,21 +25,28 @@ h1 {
 
 #clickCounter{
 	text-align: center;
-	font-size: 40px;
+	font-size: 3vw;
 	color: white; 
+  border: solid 5px white;
+  border-radius: 10px;
+  background-color: black;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
 button{
 	display: block;
-  	width: 25vw; 
-  	height: auto;
-  	margin: 0 auto; 
-  	font-size: 4vh;
-  	color: black;
-  	background: rgba(0,0,0,0);
- 	border: solid 5px #6496c8;
+  width: 25vw; 
+  height: auto;
+  margin: 0 auto; 
+  font-size: 4vh;
+  color: white;
+  background: rgba(5, 5, 5, 0.75);
+  border-radius: 10px;
+ 	border: solid 5px white;
+
  }
  button:hover{
-
  	cursor: pointer;
  }
+
