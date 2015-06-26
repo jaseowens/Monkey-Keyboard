@@ -1,25 +1,31 @@
 
 html,body{
-
   height:100%;
+  margin:0;
 }
+
+header{
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
+  height: 85%;
+  width: 100%;
+  background-color: #fdf9f3;
+  background-size: 100% auto;
+  margin:0;
+  margin-top: 10%;
+}
+
 body{
 
   background-color: #fdf9f3;
 }
-header{
-  height:100%;
-  width: 100%;
-  background-color: #fdf9f3;
-  background-size: cover;
-  margin:0;
-}
+
 .center {
 
     margin-left: auto;
     margin-right: auto;
     width: 70%;
 }
+
 h1 { 
   color:black;
   font-size: 5vw;
@@ -29,45 +35,95 @@ h1 {
   margin-left: 25%;
   margin-right: 25%;
 }
-#generatedSentence {
 
-  text-align: center;
-  font-family: Bree Serif;
-  color:black;
-}
 .countWrapper{
-  float:right;
-  margin-right: 10%;
-  width: auto;
-}
-#clickCounter{
-	text-align: center;
-	font-size: 3vw;
+  text-align: center;
+  font-size: 3vw;
   font-family: Bree Serif;
-	color: black; 
+  color: black; 
   border: solid 5px black;
   border-radius: 15px;
-  height: 225px;  
-  width: auto;
-  margin-top: 0;
+  width: 40%;
+  margin: 10px auto 0 auto;
+}
+
+#clickCounter{
+  display: inline;
+	text-align: center;
+}
+
+#correctCounter{
+  display: inline;
+}
+
+#sentGen{
+
+  display: inline;
+}
+
+.arrow{
+  margin: 0 auto;
+  margin-top: 15%;
+  text-align: center;
+  width: 15%;
+  height: 15%;
+}
+
+.arrowImg{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sentenceWrapper{
+  width: auto; 
+  height: 25%; 
+  text-align: center;
 }
 
 .sentenceGenerator{
-	display: block;
-  width: 25vw; 
-  height: auto;
-  margin: 0 auto; 
+  display: inline-block;
   font-size: 4vh;
   font-family: Bree Serif;
   color: black;
   background: rgba(0, 0, 0, 0.05);
   border-radius: 10px;
  	border: solid 5px black;
+  margin-top: 10%;
+}
 
- }
- button:hover{
+.sentenceGenerator:hover{
+
  	cursor: pointer;
   background: rgba(0, 0, 0, 0.5);
   color:white;
- }
+}
+
+.generatedSentenceBox{
+  margin: 0 auto;
+  border-radius: 10px;
+  border: solid 5px black;
+  margin-top: 10%;
+  width: 60%;
+  height: 8vh;
+  text-align: center;
+}
+
+#generatedSentence {
+  display: inline;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 4vh;
+  font-family: Bree Serif;
+  color:black;
+  position: relative;
+  top: 10%;
+}
+
+footer{
+  height: 100%;
+  box-shadow: -15px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  background-size: 100% auto;
+  margin:25% 0 0 0;
+  background-color: white;
+}
 

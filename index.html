@@ -7,28 +7,39 @@
 	<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 </head>
 
-
-
 <header>
 	<h1>Monkey Keyboard</h1>
+
+	<div class = "countWrapper">
+		<p id = "clickCounter"></p><p id = "sentGen"> - Generated Sentences!</p>
+	</div>
+
+	<div class = "countWrapper">
+		<p id = "correctCounter">0</p><p id = "sentGen"> - Correct Sentences!</p>
+	</div>
+
+	<div class="arrow"><img class ="arrowImg" src = "http://uxrepo.com/static/icon-sets/flat-arrows/svg/plain-flat-chevron-down-arrow.svg"></div>
+
 </header>
 
 <body>
-	<div class = "countWrapper">
-		<p id = "clickCounter"></p>
-	</div>
 
-	<div class = "center">
+
+	<div class = "sentenceWrapper">
 		<button class = "sentenceGenerator" type="button" onClick = "generate();">Generate Sentence!</button>
 	</div>
 
-
-
-	<div>
+	<div class = "generatedSentenceBox" Placeholder="Test">
 		<p id = "generatedSentence"></p>
 	</div>
 
 </body>
 
+<footer>
+
+
+</footer>
+
 	<script src="js/mainScript.js"></script>
+
 </html>

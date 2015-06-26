@@ -1,18 +1,25 @@
 var currentClicks; //global var, used to update DB.
+var currentCorrect; //global var, used to update DB.
 var sentence = []; //global array used to store generated sentence. 
 
-function update(clickAmount){
+function update(clickAmount, correctAmount){
 
 	document.getElementById("clickCounter").innerHTML = clickAmount; //Displays click amount
+	document.getElementById("correctCounter").innerHTML = correctAmount; //Displays click amount
 
 	currentClicks = clickAmount; //sets new global var to equal current click amount -> now called clickAmount
+	currentCorrect = correctAmount;
 
 }
 
 function showSentence(){
-	
+
 	document.getElementById("generatedSentence").innerHTML = sentence.join(" ");
 
+	if(sentence.join(" ") == "The quick brown fox jumps over the lazy dog."){
+		updateCorrects(correctAmount);
+		alert("Congrats, you generated teh correct sentence, thats a 1/16,777,216 chance of happening!")
+	}
 }
 
 function generate(){
@@ -55,6 +62,7 @@ function generate(){
 		sentence[i] = word;
 	}
 	showSentence();
+	console.log(currentClicks);
 	updateClicks(currentClicks);
 
 }
