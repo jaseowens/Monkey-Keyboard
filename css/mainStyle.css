@@ -5,18 +5,28 @@ html,body{
 }
 
 header{
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.2);
-  height: 85%;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+  height: 100%;
   width: 100%;
-  background-color: #fdf9f3;
-  background-size: 100% auto;
+  background-color: white;
   margin:0;
-  margin-top: 10%;
+  padding:0;
+  border:0;
 }
 
 body{
+  margin:0;
+  padding:0;
+  color:#fdf9f3;
+  background-color: #fdf9f3;
+}
+
+.bodyClass{
 
   background-color: #fdf9f3;
+  color:#fdf9f3;
 }
 
 .center {
@@ -26,25 +36,36 @@ body{
     width: 70%;
 }
 
+.pushHeader{
+
+  height: 15%;
+}
+.pushTitle{
+
+  height: 15%;
+}
+
 h1 { 
   color:black;
-  font-size: 5vw;
+  font-size: 6vw;
   font-family: Bree Serif;
-  border: solid 10px black;
+  border: solid 1.5vw black;
 	text-align: center;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin:0;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .countWrapper{
   text-align: center;
   font-size: 3vw;
   font-family: Bree Serif;
-  color: black; 
   border: solid 5px black;
   border-radius: 15px;
   width: 40%;
   margin: 10px auto 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  color:white;
 }
 
 #clickCounter{
@@ -53,6 +74,7 @@ h1 {
 }
 
 #correctCounter{
+
   display: inline;
 }
 
@@ -63,10 +85,11 @@ h1 {
 
 .arrow{
   margin: 0 auto;
-  margin-top: 15%;
   text-align: center;
-  width: 15%;
+  width: 100%;
   height: 15%;
+  position: absolute;
+  bottom: 0; 
 }
 
 .arrowImg{
@@ -102,9 +125,9 @@ h1 {
   margin: 0 auto;
   border-radius: 10px;
   border: solid 5px black;
-  margin-top: 10%;
+  margin-top: 20%;
   width: 60%;
-  height: 8vh;
+  height: 10vh;
   text-align: center;
 }
 
@@ -113,17 +136,52 @@ h1 {
   margin: 0 auto;
   text-align: center;
   font-size: 4vh;
+  padding: 5%;
   font-family: Bree Serif;
   color:black;
   position: relative;
-  top: 10%;
+  vertical-align: middle;
+  top: 20%;
+}
+
+.tip{
+  margin:0;
+  font-family: Bree Serif;
+  text-align: center; 
+  font-size: 3vh;
+  color:black;
+}
+
+.tipLarge{
+  width: 100%;
+  margin-top:10%;
+  font-family: Bree Serif;
+  text-align: center; 
+  font-size: 5vh;
+  color:black;
+  position: absolute;
 }
 
 footer{
-  height: 100%;
-  box-shadow: -15px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  height: 25%;
+  -webkit-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.2);
   background-size: 100% auto;
   margin:25% 0 0 0;
   background-color: white;
 }
+
+@media screen and (max-width: 1000px){
+  #generatedSentence{
+    font-size: 3.5vh;
+  }
+}
+
+@media screen and (max-width: 800px){
+  #generatedSentence{
+    font-size: 2.5vh;
+  }
+}
+
 

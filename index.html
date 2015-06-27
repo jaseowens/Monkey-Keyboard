@@ -8,7 +8,9 @@
 </head>
 
 <header>
+	<div class = "pushHeader"></div>
 	<h1>Keyboard Monkeys</h1>
+	<div class = "pushTitle"></div>
 
 	<div class = "countWrapper">
 		<p id = "clickCounter"></p><p id = "sentGen"> - Generated Sentences!</p>
@@ -18,22 +20,26 @@
 		<p id = "correctCounter">0</p><p id = "sentGen"> - Correct Sentences!</p>
 	</div>
 
-	<div class="arrow"><img class ="arrowImg" src = "http://uxrepo.com/static/icon-sets/flat-arrows/svg/plain-flat-chevron-down-arrow.svg"></div>
+	<div class="arrow"><a href="#body"><img class ="arrowImg" src = "http://uxrepo.com/static/icon-sets/flat-arrows/svg/plain-flat-chevron-down-arrow.svg"></div></a>
 
 </header>
 
-<body>
 
+<body class = "bodyClass"><a name="body"></a>
+	<div style="margin-top:10px;float:left;"></div>
+	<p class = "tipLarge">Your Generated Sentence: </p>
+	<div class = "generatedSentenceBox">
+		
+		<p id = "generatedSentence"></p>
+	</div>
+	<p class = "tip">(The quick brown fox jumps over the lazy dog.)</p>
 
 	<div class = "sentenceWrapper">
 		<button class = "sentenceGenerator" type="button" onClick = "generate();">Generate Sentence!</button>
 	</div>
 
-	<div class = "generatedSentenceBox" Placeholder="Test">
-		<p id = "generatedSentence"></p>
-	</div>
-
 </body>
+
 
 <footer>
 
